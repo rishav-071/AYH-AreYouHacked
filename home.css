@@ -87,13 +87,15 @@
 }
 .img{
     width: 300px;
+    margin-left: 10vw;
 }
 .detail{
     width: 400px;
     flex-grow: 1;
     color: white;
     font-family: "Handjet";
-    text-align: justify;
+    text-align: center;
     padding: 10px 20px;
     font-size: 25px;
+    margin-right: 10vw;
 }
