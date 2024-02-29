@@ -1,0 +1,182 @@
+/* name
+age
+gender
+ayh id no
+about
+alias name */
+
+body{
+    background-image: url(factsbg.avif);
+    background-size:contain;
+    display: flex;
+    
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 15vh;
+}
+
+.profile_section{
+    height: 570px;
+    width: 900px;
+    background-color:rgba(0, 0, 0, 0.925);
+    border-radius: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    /* flex-wrap: wrap; */
+}
+.profile_pic{
+    height: 520px;
+    width: 350px;
+    background-color: rgba(0, 0, 0, 0.305);
+    border-radius: 50px;
+    box-shadow: 0px 0px 8px white;
+    margin-left: 13px;
+    margin-right: 18px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+.profile_img{
+    height: 53%;
+    width:75%;
+    background-color: blueviolet;
+    margin-top: 12%;
+    background-image: url("hacker_mask1.jpg");
+    /* object-fit: contain; */
+    background-size: contain;
+    border-radius: 10px;
+    box-shadow:0px 0px 10px green;
+    background-size: cover;
+}
+.profile_text{
+    height: 28%;
+    width: 90%;
+    background-color: transparent;
+    color: green;
+    box-shadow: 0px 0px 5px green;
+    font-family: "Kode Mono",monospace;
+    font-weight: 500;
+    font-size: 22px;
+    text-align: center;
+}
+.profile_text h3,p{
+    margin: 10px;
+    margin-top: 14px;
+}
+.profile_text h3{
+    font-size: 40px;
+    font-weight: 700;
+}
+
+
+.profile_desc{
+    height: 90%;
+    width: 57%;
+    background-color:transparent;
+}
+.profile_info{
+    height: 62%;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.237);
+    margin-bottom: 3%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-radius: 20px;
+    box-shadow: 0px 0px 7px whitesmoke;
+    /* overflow-y: scroll; */
+   
+   
+   
+}
+.biodata h3{
+    display: inline;
+    font-family: "Kode Mono",monospace;
+    font-weight: 700;
+    font-size: 25px;
+    /* margin: 5%; */
+    margin-left: 16px;
+    color: black;
+   
+    
+}
+.biodata p{
+    display:inline ;
+    font-family: "Kode Mono",monospace;
+    font-weight: 500;
+    font-size:22px ;
+  
+}
+
+.profile_bio{
+    height: 35%;
+    width: 100%;
+    background-color:rgba(0, 0, 0, 0.363);
+    color: rgba(255, 255, 255, 0.57);
+    display: flex;
+    flex-direction: column;
+  
+}
+.profile_bio h3{
+    font-family: "Kode Mono",monospace;
+    font-weight: 700;
+    font-size: 27px;
+    margin: 5px 0px 5px 5px;
+    position: relative;
+    top: 3px;
+}
+.profile_bio p{
+    font-family: "Kode Mono",monospace;
+    margin: 0px 0px 3px 10px;
+    color: rgba(255, 0, 0, 0.626);
+    /* text-align: center; */
+}
+
+
+@media(max-width:1016px){
+    .profile_pic{
+        height: 75vh;
+        width: 50vw;
+        overflow-y: hidden;
+        margin: 25px;
+    }
+   .profile_info{
+    height: 50vh;
+    width: 50vw;
+   }
+   .profile_bio{
+    height: 30vh;
+    width: 50vw;
+   }
+}
+
+@media(max-width: 625px){
+    .profile_section{
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-start;
+        margin: 10px;
+        
+    }
+    .profile_pic{
+        height: 10vh;
+        width: 80vw;
+        overflow-y: hidden;
+        margin: 25px;
+    }
+   .profile_info{
+    height: 60vh;
+    width: 80vw;
+   }
+   .profile_bio{
+    height: 30vh;
+    width: 80vw;
+   }
+
+}
+
+
+
+
