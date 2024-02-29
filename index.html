@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://fonts.googleapis.com/css?family=Handjet"
+            rel="stylesheet"
+        />
+        <title>AYH-AreYouHacked</title>
+        <style>
+            * {
+                margin: 0px;
+                padding: 0px;
+                overflow: hidden;
+            }
+            #bg {
+                height: 100vh;
+                width: 100vw;
+                position: absolute;
+            }
+            #warning {
+                position: absolute;
+                z-index: 2;
+                top: 20vh;
+                width: 50vw;
+                padding-left: 25vw;
+                padding-right: 25vw;
+            }
+            @media (max-width: 600px) {
+                #warning {
+                    width: 70vw;
+                    padding-left: 15vw;
+                    padding-right: 15vw;
+                }
+            }
+            a{
+                height: 100vh;
+                width: 100vw;
+            }
+            p {
+                display: flex;
+                width: 100vw;
+                justify-content: center;
+                align-items: center;
+                position: absolute;
+                font-family: "Handjet";
+                font-size: 40px;
+                position: absolute;
+                bottom: 22vh;
+                color: white;
+            }
+        </style>
+    </head>
+    <body>
+        <a href="redirect.html">
+            <img src="bg.gif" alt="bg-gif" id="bg"/>
+            <img src="warning.png" alt="warning" id="warning" />
+            <p>Do not click</p>
+        </a>
+    </body>
+</html>

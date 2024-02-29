@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Redirect</title>
+        <style>
+            * {
+                background-color: black;
+                overflow: hidden;
+            }
+            .parent {
+                color: white;
+                height: 100vh;
+                width: 100vw;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+            }
+            .loader {
+                height: 10px;
+                width: 70vw;
+                position: relative;
+            }
+            .line {
+                height: 10px;
+                background-color: green;
+                animation: load 10s linear 0s 1 forwards;
+            }
+            #snd {
+                animation: blur 1s linear 0s infinite;
+                font-size: 20px;
+                text-align: center;
+            }
+            #fst{
+                font-size: 30px;
+                text-align: center;
+            }
+            a{
+                border: 0px;
+                color: white;
+                height: 20px;
+                width: 70px;
+                text-align: center;
+                text-decoration: none;
+                background-color: rgb(0, 0, 0);
+                border-radius: 20px;
+                box-shadow:0 0 15px green;
+                display: none;
+            }
+            @keyframes load {
+                0% {
+                    width: 0%;
+                }
+                30% {
+                    width: 35%;
+                }
+                40% {
+                    width: 35%;
+                }
+                70% {
+                    width: 65%;
+                }
+                80% {
+                    width: 65%;
+                }
+                100% {
+                    width: 100%;
+                }
+            }
+            @keyframes blur {
+                0% {
+                    opacity: 0;
+                }
+                50% {
+                    opacity: 1;
+                }
+                100% {
+                    opacity: 0;
+                }
+            }
+        </style>
+    </head>
+    <body>
+        <div class="parent">
+            <p id="fst">Loading....!</p>
+            <div class="loader">
+                <div class="line"></div>
+            </div>
+            <a id="btn" href="home.html">Let's Go</a>
+            <p id="snd">0%</p>
+        </div>
+        <script>
+            let p1 = document.getElementById("fst");
+            let p2 = document.getElementById("snd");
+            let i = 0;
+            let id1 = setInterval(() => {
+                p2.innerText = String(i) + "%";
+                i++;
+            }, 100);
+            setTimeout(() => {
+                clearInterval(id1);
+            }, 3100);
+            setTimeout(() => {
+                p1.innerText = "Copying your all Files....!";
+                let id2 = setInterval(() => {
+                    p2.innerText = String(i) + "%";
+                    i++;
+                }, 100);
+                setTimeout(() => {
+                    clearInterval(id2);
+                }, 3000);
+            }, 4100);
+            setTimeout(() => {
+                p1.innerText = "Getting your all Data....!";
+                let id3 = setInterval(() => {
+                    p2.innerText = String(i) + "%";
+                    i++;
+                }, 50);
+                setTimeout(() => {
+                    clearInterval(id3);
+                    p2.innerText = "";
+                }, 2000);
+            }, 8100)
+            setTimeout(() => {
+                let loader=document.getElementsByClassName("loader")
+                loader[0].style.display="none"
+                p1.innerText="😀Just kidding"
+            }, 10000);
+            setTimeout(() => {
+                let bt = document.getElementById("btn")
+                let loader=document.getElementsByClassName("loader")
+                loader[0].style.display="none"
+                bt.style.display="block"
+                p1.innerText="😀Just kidding\n\nAre you ready to explore\nthe journey of cyber security"
+                p2.innerText = "Click at your own Risk....!";
+            }, 12000);
+        </script>
+    </body>
+</html>
