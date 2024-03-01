@@ -118,6 +118,7 @@ function onSubmit() {
     submit.disabled = true
     description.innerText = detail[i]
     for (let it = 0; it < 4; it++) {
+        if (ans[i] == opt[it][i]) label[it].style.backgroundColor="rgb(116, 252, 116)"
         if (option[it].checked) {
             if (ans[i] == opt[it][i]) {
                 score++
