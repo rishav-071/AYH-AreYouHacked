@@ -43,6 +43,9 @@
 .dropdown-menu{
     background-color: rgba(20, 20, 20, 0.793);
 }
+
+
+
 body{
     background-image: url(blogs_bg.jpg);
     /* display: flex;
@@ -53,46 +56,46 @@ body{
 }
 .ayh_heading{
     height: 11.5vh;
-    width: 35%;
+    display: inline;
     background-color:rgba(0, 0, 0, 0.626);
-    /* position: relative;
-    top: 150px; */
-    margin-top: 150px;
-    margin-left: 30px;
+    position: relative;
+    top: 100px;
     box-shadow: 0px 0px 7px white;
-}
-.ayh_heading h2{
     font-family: "Kode Mono",monospace;
     font-size: 70px;
+    margin: 0px 30px 300px 30px;
     text-align: center;
     font-weight: 700;
-    /* background-color: white; */
     color: green;
 }
 .hero{
-    height: 65vh;
+    height: auto;
     width: 90%;
     background-color: rgba(255, 255, 255, 0.197);
     border-radius: 10px;
     display: flex;
+    flex-wrap: wrap;
     align-items: center;
     margin-left: 5%;
-    margin-top: 60px;
+    margin-top: 130px;
 
     /* justify-self: center; */
     justify-content: space-evenly;
 }
 
 .hero_section{
-    height: 60vh;
-    width: 60%;
+    height: 90%;
+    width: 433px;
     background-color: rgba(0, 0, 0, 0.781);
     border-radius: 30px;
     /* margin-left: 20px; */
     display: flex;
+    flex-grow: 1;
     flex-wrap: wrap;
     justify-content: center;
+    margin: 15px 10px 15px 10px;
     /* align-items: center; */
+    /* padding: 10px 0px 10px 0px; */
 
     
 }
@@ -104,11 +107,12 @@ body{
 .hero_section h4{
     margin: 10px;
     font-family: "Merriweather", serif;
-    font-size: 27px;
+    font-size: 23px;
     font-weight: 700;
     margin: 0px 5px 0px 15px;
     color: green;
     /* display: inline; */
+    padding-bottom: 30px;
 }
 .hero_section a{
     /* display: inline; */
@@ -117,14 +121,16 @@ body{
     /* text-decoration: none; */
 }
 .hero_section_text{
-    height: 60vh;
-    width: 35%;
+    height: auto;
+    width: 250px;
     background-color: rgba(0, 0, 0, 0.781);
     border-radius: 18px;
     display: flex;
+    flex-grow: 1;
     align-items: center;
     justify-content:space-evenly ;
     flex-wrap: wrap;
+    margin: 0px 15px;
 
     
 }
@@ -132,6 +138,8 @@ body{
     height: 28%;
     width: 95%;
     background-color: rgba(255, 255, 255, 0.062);
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 .text h4{
     margin: 10px;
@@ -164,10 +172,10 @@ body{
 }
 .blog{
     height: 480px;
-    width: 26%;
+    width: 300px;
     background-color: rgba(255, 255, 255, 0.114);
     box-shadow: 0px 0px 9px green;
-    margin: 40px 0px 40px 0px;
+    margin: 40px 40px 40px 40px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -197,7 +205,16 @@ body{
     width: 100%;
     
 }
-
+@media(max-width:660px){
+    .ayh_heading{
+        font-size: 45px;
+    }
+}
+@media(max-width:490px){
+    .ayh_heading{
+        font-size: 30px;
+    }
+}
 .empty_space{
     height: 100px;
     width: 100px;
